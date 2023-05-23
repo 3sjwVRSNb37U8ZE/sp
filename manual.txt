@@ -1,0 +1,32 @@
+-- SUPLOVÁNÍ --
+Projekt pro zobrazení suplování na chodbě školy. Využívá dat z webu školy.
+
+gen.py - stáhne data ze školního webu a vygeneruje soubory data.json a oznameni.json
+script.js, index.html, style.css - webová stránka pro zobrazení suplování
+config.json - konfigurační soubor
+
+data.json - obsahuje suplování pro jednotlivé dny
+oznameni.json - obsahuje speciální akce a oznámení pro jednotlivé dny
+
+Požadavky pro spuštění:
+- Python 3
+- Python knihovny: 'requests', 'beautifulsoup4'
+- Moderní webový prohlížeč (doporučuji Firefox 🦊)
+
+Jak spustit:
+1. Nainstalujte Python 3 a potřebné knihovny
+    $ pip install requests beautifulsoup4
+2. spusťte gen.py a nechte ho běžet v pozadí
+    $ python gen.py
+3. Spusťte webový server
+    $ python -m http.server <port>
+4. Otevřete webový prohlížeč a zadejte adresu http://localhost:<port>
+
+Konfigurace:
+- v souboru config.json můžete nastavit některé parametry:
+    - interval_aktualizace_dat_sekundy - jak často má gen.py aktualizovat data ze školního webu (v sekundách)
+    - interval_zobrazeni_jedne_stranky_milisekundy - jak dlouho se má zobrazovat jedna stránka suplování (v milisekundách (1000 ms = 1 s))
+
+Poznámky:
+- Změny ve formátu dat na webových stránkách školy mohou ovlivnit funkčnost tohoto projektu :)).
+- Co dělá sup, když nemůže chodit do školy? Suplování! (omlouvam se)

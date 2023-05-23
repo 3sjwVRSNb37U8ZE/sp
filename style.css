@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.date-day-page-container {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#container {
+    width: 100%;
+    height: calc(100vh - 120px); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px; 
+}
+
+
+.current-date-time {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#current-date {
+    margin-right: 5px;
+}
+
+#current-time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.class-container {
+    margin: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 30%;
+}
+
+.class-name {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+td, th {
+    padding: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+th {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+    text-align: left !important;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-table {
+    font-size: calc(5px + 1vw);
+    border-collapse: collapse;
+    margin: 0 8px 0 8px;
+}
+
+.class-table td {
+    border: 2px solid black;
+    padding: 1px;
+    text-align: center;
+}
+
+.class-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+#current-time {
+    top: 10px;
+    right: 10px;
+}
+
+.gray-text {
+    color: #888;
+}
+
+.hidden {
+    display: none;
+}
+
+.column-labels {
+    position: absolute;
+    bottom: 50px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 0px 0;
+    z-index: -999;
+}  
+  
+.label-class,
+.label-substitution,
+.label-fourth-cell,
+.label-united-cell,
+.label-other-cells {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #333;
+}  
+
+#current-day-page {
+    font-size: 1rem;
+}
+
+.announcements {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    z-index: 1;
+    border-top: 2px solid #646464;
+    font-size: calc(7px + 0.5vw);
+    text-align: center;
+}
